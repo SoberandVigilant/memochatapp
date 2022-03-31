@@ -31,9 +31,7 @@ const renderReadReceipts = (message, isMyMessage) => chat.people.map((person, in
             return (
                 <div key={`msg_${index}`} style={{ width: '100%' }}>
                     <div className="message-block">
-                        {       isMyMessage
-                                ? <MyMessage message={message} />
-                                : <TheirMessage message={message} lastMessage={messages[lastMessageKey]} />
+                        { isMyMessage ? <MyMessage message={message} /> : <TheirMessage message={message} lastMessage={messages[lastMessageKey]} />
                         }
                     </div>
                     <div className="read-receipts" style={{ marginRight: isMyMessage ? '18px' : '0px', marginLeft: isMyMessage ? '0px' : '68px' }}>
@@ -58,12 +56,12 @@ const renderReadReceipts = (message, isMyMessage) => chat.people.map((person, in
                 </div>
             </div>
             {renderMessages()}
-            <div style={{ height: '100px' }} />
+            <div style={{ height: '600px' }} />
             <div className="message-from-container">
                 <MessageForm {...props} chatId={activeChat} />
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default ChatFeed;
