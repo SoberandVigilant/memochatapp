@@ -1,10 +1,10 @@
-import { useState } from 'react';
+/*import { useState } from 'react';
 import axios from 'axios';
 
 const projectID = 'bb7480a5-309a-4bd8-9f20-2b5f78b19f99'; 
 
 const Modal = () => {
-    const [unsename, setUsername] = useState('');
+    const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
 
@@ -22,7 +22,7 @@ const Modal = () => {
             window.location.reload();
             setError('');
         } catch (err) {
-          setError('');
+          setError('Username: user123  Password: password123');
         } 
     };
 
@@ -46,3 +46,4 @@ const Modal = () => {
 };
 
 export default Modal;
+*/
